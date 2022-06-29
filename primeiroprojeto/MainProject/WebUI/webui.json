@@ -1,0 +1,194 @@
+{
+  "version": "4.67.0",
+  "application": {
+    "aimms.widget.type": {
+      "literal": "application"
+    },
+    "browsername": {
+      "aimms": {
+        "contents": [
+          "webui::ClientBrowserName"
+        ]
+      }
+    },
+    "browsertimezone": {
+      "aimms": {
+        "contents": [
+          "webui::BrowserTimeZone"
+        ]
+      }
+    },
+    "ignoredst": {
+      "aimms": {
+        "contents": [
+          "webui::IgnoreDST"
+        ]
+      }
+    },
+    "page.home.visible": {
+      "aimms": {
+        "contents": [
+          "Qtde_aguacomgas"
+        ]
+      }
+    },
+    "pages": {
+      "literal": {
+        "name": "root",
+        "slug": "root",
+        "children": [
+          {
+            "name": "Main Project",
+            "slug": "main_project",
+            "children": [
+              {
+                "name": "home",
+                "slug": "home",
+                "type": "pagev2-grid",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "theme.classic": {
+      "literal": "NOT_ALLOWED"
+    },
+    "timezone": {
+      "aimms": {
+        "contents": [
+          "webui::DisplayTimeZone"
+        ]
+      }
+    },
+    "timezone.dst.readonly": {
+      "aimms": {
+        "contents": [
+          "webui::DefaultDSTSettingForDisplayTimeZone"
+        ]
+      }
+    }
+  },
+  "pages/home": {
+    "aimms.widget.type": {
+      "literal": "pagev2-grid"
+    },
+    "bindings": {
+      "literal": [
+        {
+          "widgetUri": "xyrev",
+          "gridArea": "area-a",
+          "dndId": "area-axyrev0"
+        },
+        {
+          "widgetUri": "executar",
+          "gridArea": "area-a",
+          "dndId": "area-aexecutar1"
+        },
+        {
+          "widgetUri": "Limpar Valores",
+          "gridArea": "area-a",
+          "dndId": "Unassigned widgetsLimpar Valores2"
+        }
+      ]
+    },
+    "layoutId": {
+      "literal": "Layout2"
+    },
+    "widgets": {
+      "literal": [
+        {
+          "uri": "Limpar Valores",
+          "layoutInfo": {
+            "width": "2",
+            "height": "1",
+            "customPosition": "checked",
+            "pos": {
+              "x": "10",
+              "y": "250"
+            }
+          }
+        },
+        {
+          "uri": "executar",
+          "layoutInfo": {
+            "width": "2",
+            "height": "1",
+            "customPosition": "checked",
+            "pos": {
+              "x": "10",
+              "y": "200"
+            }
+          }
+        },
+        {
+          "uri": "xyrev",
+          "layoutInfo": {
+            "width": "2",
+            "height": "1",
+            "customPosition": "checked",
+            "pos": {
+              "x": "10",
+              "y": "10"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "widgets/executar": {
+    "action": {
+      "literal": {
+        "type": "procedure",
+        "value": "MainInitialization"
+      }
+    },
+    "aimms.widget.type": {
+      "literal": "button"
+    },
+    "name": {
+      "literal": "executar"
+    },
+    "title": {
+      "literal": "executar"
+    }
+  },
+  "widgets/Limpar Valores": {
+    "action": {
+      "literal": {
+        "type": "procedure",
+        "value": "Proc_Limpavariaveis"
+      }
+    },
+    "aimms.widget.type": {
+      "literal": "button"
+    },
+    "name": {
+      "literal": "Limpar Valores"
+    },
+    "title": {
+      "literal": "Limpar Valores"
+    }
+  },
+  "widgets/xyrev": {
+    "aimms.widget.type": {
+      "literal": "scalar"
+    },
+    "contents": {
+      "aimms": {
+        "contents": [
+          "Qtde_aguacomgas",
+          "Qtde_Aguasemgas",
+          "lucro"
+        ]
+      }
+    },
+    "name": {
+      "literal": "xyrev"
+    },
+    "title": {
+      "literal": "Resultado"
+    }
+  }
+}
