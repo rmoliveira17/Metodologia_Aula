@@ -58,7 +58,7 @@ def cadastrar_alunos(n):
         n2   = ler_nota("  Nota 2: ")
         n3   = ler_nota("  Nota 3: ")
  
-        media    = calcular_media(n1, n2, n3)
+        media    = calcular_media_novo(n1, n2, n3)
         situacao = classificar(media)
  
         alunos.append({
